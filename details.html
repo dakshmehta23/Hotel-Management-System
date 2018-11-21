@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block navbar %}
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('home') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="{{ url_for('register') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Book Now</a>
+    <a href="{{ url_for('details') }}" class="w3-bar-item w3-button w3-padding-large w3-white">Details</a>
+     <a href="{{ url_for('admin1') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" >Login as Admin</a>
+    <a href="{{ url_for('contact') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Now</a>
+  </div>
+</div>
+{% endblock navbar %}
+{% block pgtitle %}
+About Page
+{% endblock pgtitle %}
+{% block para1 %}
+
+<div class="container" style="font-size: 30px; font-family: Lobster;">
+	<ul>
+
+	<li><p>Extravagance finds a new home at the hotel, complete with experiences that can leave you spellbound and anxious for more.</p> 
+	</li>
+	<li><p>
+	Boasting an ambience that speaks of harmony and elegance, the hotel offers excellent accommodation, services and facilities to make your stay a remarkable journey</p>
+	</li>
+	<li><p>
+	It's a perfect getaway for a business traveller who is also looking for some recreation nearby in the evening. </p>
+	</li>
+	<li><p>
+		Hotel can be summed as a Traveller's Paradise.</p>
+	</li>
+</ul>
+
+</div>
+
+
+{% endblock para1 %}
+
+
+{% block para2 %}
+
+
+{% endblock para2 %}
+
+
+
+{% block para3 %}
+{% endblock para3 %}

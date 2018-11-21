@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block navbar %}
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('home') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="{{ url_for('register') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Book Now</a>
+        <a href="{{ url_for('details') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Details</a>
+         <a href="{{ url_for('admin1') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" >Login as Admin</a>
+
+    <a href="{{ url_for('contact') }}" class="w3-bar-item w3-button w3-padding-large w3-white">Contact Us</a>
+    
+  </div>
+</div>
+{% endblock navbar %}
+{% block pgtitle %}
+CONTACT US
+{% endblock pgtitle %}
+{% block para1 %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.0543082065271!2d55.117504508144016!3d25.13201847427154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e464000b9%3A0x5945a418a804ac5!2sAtlantis%2C+The+Palm!5e0!3m2!1sen!2sin!4v1542755094552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+{% endblock para1 %}
+{% block para2 %}
+
+<div class ="container">
+	<div class="container">
+		Telephone No: +971 4 426 2000
+	</div>
+	<div class="container">
+		Address: The Atlantis ,
+		Crescent Rd - Dubai - United Arab Emirates
+
+</div>
+{% endblock para2 %}
+
+
+
+{% block para3 %}
+{% endblock para3 %}
